@@ -36,4 +36,4 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
 
       - name: Test execution
-        run: poetry run pytest
+        run: poetry run pytest -v

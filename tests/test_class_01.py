@@ -1,2 +1,5 @@
+from src.functions import add
+
+
 def test_01():
-    assert False
+    assert add.__annotations__ == {'x': int, 'y': int}
